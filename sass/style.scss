@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+@import "global/fonts";
+@import "global/forms";
+
+@import "blocks/page-header";
+@import "blocks/page-container";
+@import "blocks/main-nav";
+@import "blocks/download-info";
+@import "blocks/header-intro";
+
+@import "blocks/promo-block";
+@import "blocks/promo-abilities";
+@import "blocks/price";
+
+@import "blocks/contest-form";
+@import "blocks/form-block";
+
+@import "blocks/index-content";
+@import "blocks/index-footer";
+
+@import "blocks/footer-inner";
+
+@import "blocks/photo-block";
+@import "blocks/photo-upload";
+@import "blocks/price";
+
+@import "blocks/reviews";
+
+body { background: lightblue; }
