@@ -1,0 +1,167 @@
+.name-input {
+  min-height: 90px;
+  margin-bottom: 25px;
+}
+
+.form-block {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.form-block--contacts {
+  background: #ffffff;
+}
+
+.form-block__title {
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  text-align: center;
+}
+
+.achievement-input,
+.application-input {
+  min-height: 60px;
+}
+
+.contact-input {
+  min-height: 90px;
+}
+
+.contact-input  input {
+  width: 280px;
+}
+
+.form-block--text {
+  text-align: center;
+}
+
+.form-block__title {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form-block--text textarea {
+  width: 280px;
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.form-submit__btn {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+@media (#{$tablet-widths}) {
+
+  .form-block--achievements,
+  .form-block--contacts,
+  .form-block--text,
+  .form-block--application {
+    width: 400px;
+    padding: 50px;
+  }
+
+  .name-input {
+    width: auto;
+
+    border: 1px solid black;
+  }
+
+  .application-input,
+  .achievement-input {
+    width: 500px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+  }
+
+  .form-block--text textarea {
+    width: 500px;
+    min-height: 190px;
+  }
+
+  .contact-input {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+  .form-submit {
+    @include clearfix;
+    @include container;
+  }
+
+  .form-submit__btn {
+    float: left;
+    width: 300px;
+  }
+
+  .form-submit__note {
+    float: right;
+  }
+
+}
+
+ @media (#{$desktop-widths}) {
+
+ .form-block--application {
+    position: absolute;
+    right:10%;
+    top: 65%;
+    padding: 50px;
+  }
+
+   .application-input {
+    width: 300px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+   }
+
+  .form-block--achievements,
+  .form-block--contacts,
+  .form-block--text, {
+    width: 840px;
+  }
+
+  .achievement-input {
+    width: 230px;
+    margin-right: 35px;
+    display: inline-block;
+    vertical-align: top;
+
+    border: 1px solid black;
+   }
+
+   .form-block--text textarea {
+    width: 820px;
+
+    min-height: 125px;
+  }
+
+   .contact-input {
+    width: 330px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+   }
+
+   .form-submit {
+     @include clearfix;
+     @include container;
+   }
+
+   .form-submit__btn {
+    float: left;
+    width: 300px;
+   }
+
+   .form-submit__note {
+     float: right;
+   }
+ }

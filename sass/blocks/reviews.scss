@@ -1,3 +1,49 @@
 .reviews {
-  border: 1px solid black;
+  margin-top: 45px;
+  margin-bottom: 40px;
+
+  text-align: center;
+  background: $bg-block;
+}
+
+.review__item:not(:first-child) {
+  display: none;
+}
+
+.review__author {
+  display: none;
+}
+
+.review__text {
+  margin-bottom: 35px;
+}
+
+.slider-pagination {
+  text-align: center;
+}
+
+.slider-page {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (#{$tablet-widths}) {
+
+  .review__text {
+    font-size: 18px;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .review__text {
+    width: 685px;
+    margin: 0 auto;
+  }
+
+  .review__item {
+    padding-top: 190px;
+  }
+
 }

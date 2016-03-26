@@ -9,8 +9,10 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="page-container">
-          <a href="" class="main-nav__logo">PINK</a>
-          <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
+          <div class="main-nav__block">
+            <a href="" class="main-nav__logo">PINK</a>
+            <a href="" class="main-nav__toggle  main-nav__toggle--closed">X</a>
+          </div>
           <div class="main-nav__wrapper  main-nav__wrapper--closed">
             <ul class="main-nav__items">
               <li class="main-nav__item"><a href="">Главная</a></li>
@@ -22,8 +24,8 @@
         </div>
       </nav>
       <div class="page-container">
-        <div class="header-intro">
-          <h1 class="header-intro__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+        <div class="innerheader-intro">
+          <h1 class="innerheader-intro__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
         </div>
       </div>
     </header>
@@ -45,37 +47,59 @@
               <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
-          <fieldset class="form-block">
+          <fieldset class="form-block form-block--achievements">
             <legend class="form-block__title">Ваши безбашенные достижения в путешествии </legend>
-            <input type="checkbox" id="shark-selfie" name="shark-selfie" checked>
-            <label for="shark-selfie">Сделал селфи с акулой</label>
-            <input type="checkbox" id="achiev-burn" name="achiev-burn" checked>
-            <label for="achiev-burn">Обгорел на пляже</label>
-            <input type="checkbox" id="see-norris" name="see-norris">
-            <label for="see-norris">Видел Чака Норриса</label>
-            <input type="checkbox" id="souvenirs" name="souvenirs" checked>
-            <label for="souvenirs">Накупил сувениров</label>
-            <input type="checkbox" id="achiev-tower" name="achiev-tower">
-            <label for="achiev-tower">Удержал башню</label>
-            <input type="checkbox" id="achiev-hotel" name="achiev-hotel">
-            <label for="achiev-hotel">Разгромил отель</label>
+            <div class="achievement-input">
+              <input type="checkbox" id="shark-selfie" name="shark-selfie" checked>
+              <label for="shark-selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="achievement-input">
+              <input type="checkbox" id="achiev-burn" name="achiev-burn" checked>
+              <label for="achiev-burn">Обгорел на пляже</label>
+            </div>
+            <div class="achievement-input">
+              <input type="checkbox" id="see-norris" name="see-norris">
+              <label for="see-norris">Видел Чака Норриса</label>
+            </div>
+            <div class="achievement-input">
+              <input type="checkbox" id="souvenirs" name="souvenirs" checked>
+              <label for="souvenirs">Накупил сувениров</label>
+            </div>
+            <div class="achievement-input">
+              <input type="checkbox" id="achiev-tower" name="achiev-tower">
+              <label for="achiev-tower">Удержал башню</label>
+            </div>
+            <div class="achievement-input">
+              <input type="checkbox" id="achiev-hotel" name="achiev-hotel">
+              <label for="achiev-hotel">Разгромил отель</label>
+            </div>
           </fieldset>
-          <fieldset class="form-block">
-            <label for="phone">Номерок телефончика</label>
-            <input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-            <label for="email">Адресок почты</label>
-            <input type="text" id="email" name="email" placeholder="E-mail, пожалуйста">
+          <fieldset class="form-block form-block--contacts">
+            <div class="contact-input">
+              <label for="phone">Номерок телефончика</label>
+              <input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="contact-input">
+              <label for="email">Адресок почты</label>
+              <input type="text" id="email" name="email" placeholder="E-mail, пожалуйста">
+            </div>
           </fieldset>
-          <fieldset class="form-block">
+          <fieldset class="form-block form-block--application">
             <legend class="form-block__title">C каким приложением путешествовали?</legend>
-            <input type="radio" id="ios" name="ios" checked>
-            <label for="ios">Pink для iOS</label>
-            <input type="radio" id="android" name="android">
-            <label for="android">Pink на Android</label>
-            <input type="radio" id="windows" name="windows">
-            <label for="windows">Windows Phone</label>
+            <div class="application-input">
+              <input type="radio" id="ios" name="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </div>
+            <div class="application-input">
+              <input type="radio" id="android" name="android">
+              <label for="android">Pink на Android</label>
+            </div>
+            <div class="application-input">
+              <input type="radio" id="windows" name="windows">
+              <label for="windows">Windows Phone</label>
+            </div>
           </fieldset>
-          <fieldset class="form-block">
+          <fieldset class="form-block form-block--text">
             <legend class="form-block__title">Опишите свои эмоции</legend>
             <textarea rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
@@ -88,7 +112,7 @@
         </div>
       </form>
     </main>
-    <footer class="footer-inner">
+    <footer class="footer-inner footer-inner--page">
       <div class="page-container">
         <section class="footer-inner__logo">
           <a  href="#" class="footer-inner__logo-link"> Logo</a>

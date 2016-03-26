@@ -1,0 +1,63 @@
+.promo-abilities {
+  margin-top: 80px;
+}
+
+.promo-ability {
+  margin-bottom: 35px;
+}
+
+.promo-ability__photo {
+  display: none;
+}
+
+@media (#{$tablet-widths}) {
+
+  .promo-abilities {
+   float: right;
+   width: 310px;
+
+   text-align: left;
+   background: $bg-block;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .promo-abilities {
+   display: block;
+   position: relative;
+
+
+   width: 940px;
+   margin: 0 auto;
+   margin-top: 75px;
+
+   text-align: center;
+  }
+
+  .promo-ability {
+    display: table-cell;
+    width: 310px;
+    min-height: 220px;
+
+    background: $bg-block;
+   }
+
+   .promo-ability__photo {
+     display: table-cell;
+
+     width: 310px;
+     height: 300px;
+
+     margin-bottom: 50px;
+
+     text-align: center;
+   }
+
+   .promo-ability__photo img {
+     width: 180px;
+     height: 300px;
+   }
+
+}
