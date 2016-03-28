@@ -1,0 +1,60 @@
+.download-info {
+  position: relative;
+  z-index: 5;
+
+  margin: 0;
+  padding-top: 25px;
+  min-height: 270px;
+
+  text-align:center;
+  color: #ffffff;
+}
+
+.download-info__title {
+  display: none;
+}
+
+.download-wrapper {
+  margin: 0;
+
+  background: #1d2631;
+}
+
+@media (#{$tablet-widths}) {
+
+  .download-wrapper {
+    float: left;
+
+    width:300px;
+    min-height: 450px;
+  }
+
+  .download-info__title {
+    display: block;
+    margin-bottom: 30px;
+
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
+
+  }
+
+}
+
+
+@media (#{$desktop-widths}) {
+
+  .download-wrapper {
+    float: left;
+    width: 300px;
+
+    min-height: 530px;
+  }
+
+
+  .download-info__title {
+    margin-bottom: 50px;
+  }
+
+}

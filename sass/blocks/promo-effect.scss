@@ -1,0 +1,28 @@
+.promo-effect {
+  display: none;
+
+  text-align: left;
+  background: $bg-block;
+}
+
+
+@media (#{$tablet-widths}) {
+
+  .promo-effect {
+    display: block;
+    padding-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px
+  }
+}
+
+@media (#{$desktop-widths}) {
+
+  .promo-effect {
+    display: block;
+    padding-left: 370px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+  }
+
+}

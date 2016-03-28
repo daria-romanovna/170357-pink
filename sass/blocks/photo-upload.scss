@@ -1,3 +1,101 @@
 .photo-upload {
-  border: 1px solid black;
+  text-align: center;
+}
+
+.photo-upload-intro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.upload-section {
+  margin-top: 20px;
+
+  min-height: 700px;
+  background: $bg-block;
+}
+
+.upload-section__photo {
+  width: 280px;
+  height: 370px;
+}
+
+.upload-controls {
+  min-height: 110px;
+
+  background: #ffffff;
+}
+
+.control-range {
+  min-height: 90px;
+
+  background: #ffffff;
+}
+
+.upload-buttons {
+  min-height: 200px;
+
+  background: #ffffff;
+}
+
+@media (#{$tablet-widths}) {
+
+   .upload-section {
+    @include clearfix;
+    min-height: 510px;
+
+   }
+
+  .upload-section__photo {
+    float: left;
+    width: 300px;
+    height: 400px;
+
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .upload-section__controls {
+    float: right;
+    width: 300px;
+    min-height: 400px;
+
+    padding-top: 60px;
+
+  }
+
+  .control-range {
+    min-height: 85px;
+  }
+
+  .photo-upload-intro {
+    font-size: 18px;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+   .upload-section {
+    min-height: 515px;
+   }
+
+  .upload-section__photo {
+    float: left;
+    width: 300px;
+    height: 400px;
+    padding: 60px 80px;
+  }
+
+  .upload-section__controls {
+    float: right;
+    width: 410px;
+
+    padding: 60px;
+    padding-left: 0px;
+   }
+
+    .control-range {
+    min-height: 90px;
+  }
+
 }

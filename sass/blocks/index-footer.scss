@@ -1,3 +1,75 @@
 .index-footer {
-  border: 1px solid black;
+  text-align: center;
+}
+
+.footer-contacts {
+  margin-top: 45px;
+}
+
+.footer-contacts__phrase {
+  margin-bottom: 35px;
+
+  font-size: 24px;
+}
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 35px;
+}
+
+.contact-item__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact-item__value {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.footer-map {
+  min-height: 200px;
+  background: $bg-block;
+}
+
+@media (#{$tablet-widths}) {
+
+  .contact-item {
+    width: 48%;
+    margin-bottom: 45px;
+  }
+
+  .footer-contacts__phrase {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  .footer-map {
+    min-height: 380px;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .contact-item {
+    width: 32%;
+
+    margin-bottom: 45px;
+  }
+
+  .footer-contacts__phrase {
+    font-size: 50px;
+    margin-bottom: 55px;
+  }
+
+  .footer-map {
+    min-height: 500px;
+  }
+
 }

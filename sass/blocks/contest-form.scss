@@ -1,3 +1,36 @@
+
+.contest-form__conditions {
+  margin-top: 45px;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.contest-form__name {
+    width: 280px;
+    min-height: 350px;
+  }
+
 .contest-form {
-  border: 1px solid black;
+  @include clearfix;
+}
+
+@media (#{$tablet-widths}) {
+
+  .contest-form__name {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .contest-form__name {
+    position: relative;
+
+    width: 440px;
+    padding-right: 500px;
+  }
+
 }

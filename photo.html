@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav inner-nav">
         <div class="page-container">
-          <a href="" class="main-nav__logo">PINK</a>
-          <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
+          <div class="main-nav__block">
+            <a href="" class="main-nav__logo">PINK</a>
+            <a href="" class="main-nav__toggle  main-nav__toggle--closed">X</a>
+          </div>
           <div class="main-nav__wrapper  main-nav__wrapper--closed">
             <ul class="main-nav__items">
               <li class="main-nav__item"><a href="">Главная</a></li>
@@ -22,8 +24,8 @@
         </div>
       </nav>
       <div class="page-container">
-        <div class="header-intro">
-          <h1 class="header-intro__title">Фотографии пользователей</h1>
+        <div class="innerheader-intro">
+          <h1 class="innerheader-intro__title">Фотографии пользователей</h1>
         </div>
       </div>
     </header>
@@ -131,21 +133,29 @@
                 <a href="#" class="control-link  control-link-contrast">Contrast</a>
               </div>
               <div class="control-range">
-                <div class="control-toggle__scale">
+                <div class="control-range__block">
+                  <div class="control-toggle__scale control-toggle__scale--crop">x</div>
+                  <div class="control-range__toggle control-range__toggle--crop"></div>
                 </div>
-                <div class="control-range__toggle">
+                <div class="control-range__block">
+                  <div class="control-toggle__scale control-toggle__scale--color">x</div>
+                  <div class="control-range__toggle control-range__toggle--color"></div>
+                </div>
+                <div class="control-range__block">
+                  <div class="control-toggle__scale control-toggle__scale--contrast">x</div>
+                  <div class="control-range__toggle control-range__toggle--contrast"></div>
                 </div>
               </div>
-            </div>
-            <div class="upload-buttons">
-              <a href="#" class="btn btn-upload--enabled">Запостить</a>
-              <a href="#" class="btn btn-upload--disabled">Отмена</a>
+              <div class="upload-buttons">
+                <a href="#" class="btn btn-upload--enabled">Запостить</a>
+                <a href="#" class="btn btn-upload--disabled">Отмена</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer-inner">
+    <footer class="footer-inner footer-inner--page">
       <div class="page-container">
         <section class="footer-inner__logo">
           <a  href="#" class="footer-inner__logo-link"> Logo</a>
