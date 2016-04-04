@@ -9,25 +9,23 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <div class="page-container">
           <div class="main-nav__block">
             <a href="" class="main-nav__logo">PINK</a>
             <a href="" class="main-nav__toggle  main-nav__toggle--closed">X</a>
           </div>
-          <div class="main-nav__wrapper  main-nav__wrapper--closed">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="">Главная</a></li>
-              <li class="main-nav__item"><a href="">Фотографии</a></li>
-              <li class="main-nav__item"><a href="">Конкурс</a></li>
-              <li class="main-nav__item"><a href="">HTML Academy</a></li>
-            </ul>
-          </div>
+          <ul class="main-nav__wrapper  main-nav__wrapper--closed">
+            <li class="main-nav__item"><a href="">Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
         </div>
       </nav>
       <div class="page-container">
         <div class="header-intro">
-          <img src="http://placehold.it/150x100" alt="Application Preview">
+          <img src="img/iphone-hand-mobile.png" alt="Application Preview" width="258" height="290">
         </div>
         <div class="download-info download-wrapper">
           <h1 class="download-info__title">Взгляните на жизнь иначе!</h1>
@@ -45,32 +43,27 @@
       <section class="promo-block">
         <div class="page-container">
           <div class="promo-block__phrase">Устали от серости мегаполиса?</div>
-          <div class="promo-block__phrase">Нам есть, что вам предложить!</div>
-          <div class="promo-abilities">
-            <div class="promo-ability">
-              <div class="promo-ability__photo">
-                <img src="http://placehold.it/150x100" alt="Application Hello">
+          <div class="promo-block__phrase">Нам есть, что вам  предложить!</div>
+          <div class="promo-block__wrap">
+            <div class="promo-abilities">
+              <div class="promo-ability">
+                <h2 class="promo-ability__title">Поднимает настроение</h2>
+                <p class="promo-ability__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
               </div>
-              <h2 class="promo-ability__title">Поднимает настроение</h2>
-              <p class="promo-ability__description">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-            </div>
-            <div class="promo-ability">
-              <div class="promo-ability__photo">
-                <img src="http://placehold.it/150x100" alt="Application Hello">
+              <div class="promo-ability">
+                <h2 class="promo-ability__title">Меняет мир вокруг</h2>
+                <p class="promo-ability__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </div>
-              <h2 class="promo-ability__title">Меняет мир вокруг</h2>
-              <p class="promo-ability__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </div>
-            <div class="promo-ability">
-              <div class="promo-ability__photo">
-                <img src="http://placehold.it/150x100" alt="Application Hello">
+              <div class="promo-ability">
+                <h2 class="promo-ability__title">Заводит новых друзей</h2>
+                <p class="promo-ability__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
               </div>
-              <h2 class="promo-ability__title">Заводит новых друзей</h2>
-              <p class="promo-ability__description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
-          </div>
-          <div class="promo-image">
-            <img src="http://placehold.it/150x100" alt="Application Hello">
+            <div class="promo-image">
+              <img src="img/iphone-screen-mobile.png" alt="Application Hello" width="241" height="425">
+              <img src="img/iphone-screen-mobile.png" alt="Application Hello">
+              <img src="img/iphone-screen-mobile.png" alt="Application Hello">
+            </div>
           </div>
         </div>
       </section>
@@ -171,15 +164,15 @@
             Свяжитесь с нами!
           </div>
           <div class="contacts">
-            <div class="contact-item">
+            <div class="contact-item contact-item--call">
               <div class="contact-item__title">Звоните</div>
               <span class="contact-item__value">+7 (812) 555-66-66</span>
             </div>
-            <div class="contact-item">
+            <div class="contact-item  contact-item--write">
               <div class="contact-item__title">Пишите</div>
               <span class="contact-item__value">mail@htmlacademy.ru</span>
             </div>
-            <div class="contact-item">
+            <div class="contact-item  contact-item--visit">
               <div class="contact-item__title">Приезжайте в гости</div>
               <p class="contact-item__value">
               ул. Большая <br>
@@ -193,7 +186,7 @@
       </div>
     </footer>
     <footer class="footer-inner">
-      <div class="page-container">
+      <div class="page-container footer-index__flex">
         <section class="footer-inner__logo">
           <a  href="#" class="footer-inner__logo-link"> Logo</a>
         </section>
@@ -210,5 +203,6 @@
         </section>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

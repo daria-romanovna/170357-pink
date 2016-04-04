@@ -2,28 +2,48 @@
 .price-table {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
   margin-bottom: 40px;
-  width: 280%;
+  width: 270%;
 
   border-collapse: collapse;
   // border: 2px solid #e5e5e5;
+
+  text-transform: uppercase;
 }
 
-.price-table  tr {
-  border-bottom: 2px solid #e5e5e5;
+.price-table tr {
+    border-bottom: 2px solid #e5e5e5
 }
+
+.price-table tr:first-child {
+    border-bottom: none
+}
+
+.price-table td, .price-table th {
+    border-right: 2px solid #e5e5e5
+}
+
+.price-table td {
+    text-align: left;
+    background: #fff;
+    padding: 22px
+}
+
+.price-table td:nth-child(even) {
+    border-right: none
+}
+
+.price-table td:first-child {
+    text-transform: none;
+    border: 2px solid #e5e5e5
+}
+
 
 .price-table  td:first-child,
 .price-table  th:first-child, {
   display: none;
 }
 
-.price-table  td {
-  text-align: left;
-  padding: 12px;
-  border: 2px solid #e5e5e5;
-}
 
 .price-table  th {
   padding: 20px 40px;
@@ -31,13 +51,18 @@
   background: #283645;
   color: #ffffff;
   font-weight: 300;
-  font-weight: 24px;
+  font-size: 22px;
+  line-height: 30px;
   text-transform: uppercase;
-
 }
 
 .price-table__tarif {
+  font-size: 16px;
   font-weight: 700;
+}
+
+.price-table__rate {
+
 }
 
 @media (#{$tablet-widths}) {
@@ -46,6 +71,7 @@
     margin:0 auto;
     width: 620px;
     margin-top: 100px;
+    margin-bottom: 40px;
 
     font-size: 18px;
 
@@ -81,13 +107,14 @@
 @media (#{$desktop-widths}) {
 
   .slider-pice {
-    @include container;
+    @include container-fluix;
   }
 
   .price-table {
     margin:0 auto;
-    width: auto;
+    width: 100%;
     margin-top: 150px;
+    margin-bottom: 40px;
   }
 
 }

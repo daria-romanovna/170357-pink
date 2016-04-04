@@ -1,13 +1,39 @@
 .page-header {
+  position: relative;
   @include clearfix;
 
   margin: 0;
   padding: 0;
 
-  background: #415670;
+  color: #ffffff;
+
+  background: url(../img/bg-back-mobile.jpg) top center no-repeat #1d2631;
+  background-size: auto 458px;
+ }
+
+
+@media (#{$tablet-widths}) {
+
+  .page-header {
+    background: url(../img/bg-back-mobile.jpg) top center no-repeat #1d2631;
+    background-size: auto 755px;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .page-header {
+    background: url(../img/bg-back-mobile.jpg) #1d2631;
+    background-size: cover;
+  }
 }
 
 .page-header a {
   color: white;
   text-decoration: none;
+}
+
+.page-header a:hover {
+  color: #d22856;
 }

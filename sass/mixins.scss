@@ -7,15 +7,16 @@
   }
 }
 
-@mixin container {
-  width: 280px;
+@mixin container-fluix {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (#{$tablet-widths}) {
-    width: 620px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 940px;
   }
 
-  @media (#{$desktop-widths}) {
-    width: 940px;
-  }
 }

@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Pink</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,cyrillic" rel='stylesheet'>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav inner-nav">
+      <nav class="main-nav main-nav--closed">
         <div class="page-container">
           <div class="main-nav__block">
             <a href="" class="main-nav__logo">PINK</a>
             <a href="" class="main-nav__toggle  main-nav__toggle--closed">X</a>
           </div>
-          <div class="main-nav__wrapper  main-nav__wrapper--closed">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="">Главная</a></li>
-              <li class="main-nav__item"><a href="">Фотографии</a></li>
-              <li class="main-nav__item"><a href="">Конкурс</a></li>
-              <li class="main-nav__item"><a href="">HTML Academy</a></li>
-            </ul>
-          </div>
+          <ul class="main-nav__wrapper  main-nav__wrapper--closed">
+            <li class="main-nav__item"><a href="">Главная</a></li>
+            <li class="main-nav__item"><a href="">Фотографии</a></li>
+            <li class="main-nav__item"><a href="">Конкурс</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
         </div>
       </nav>
       <div class="page-container">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="page-container">
-        <div class="photo-comment">
+        <div class="photo-comment flex-comment">
           <div class="photo-comment__author">
             <span class="photo-comment__author-name">Анна</span>
             <span class="photo-comment__author-time">(5 минут назад)</span>
@@ -49,8 +49,10 @@
           <div class="photo-comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
           <div class="photo-comment__likes">Нравится: 215</div>
         </div>
+      </div>
+      <div class="page-container photo-flex">
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-1-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Левон</span>
@@ -61,7 +63,7 @@
           </div>
         </article>
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-2-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Антон</span>
@@ -72,7 +74,7 @@
           </div>
         </article>
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-3-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Борис</span>
@@ -83,7 +85,7 @@
           </div>
         </article>
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-4-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Сергей</span>
@@ -94,7 +96,7 @@
           </div>
         </article>
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-5-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Максим</span>
@@ -105,7 +107,7 @@
           </div>
         </article>
         <article class="photo-block">
-          <img src="http://placehold.it/150x100" class="photo-block__image" alt="Travel Photo">
+          <img src="img/photo-6-mobile.jpg" class="photo-block__image" alt="Travel Photo">
           <div class="photo-comment">
             <div class="photo-comment__author">
               <span class="photo-comment__author-name">Надежда</span>
@@ -124,39 +126,39 @@
           </div>
         </div>
         <div class="upload-section">
-          <div class="page-container">
-            <img src="http://placehold.it/150x100" class="upload-section__photo" alt="Upload Photo">
-            <div class="upload-section__controls">
-              <div class="upload-controls">
-                <a href="#" class="control-link control-link-crop--active ">Crop</a>
-                <a href="#" class="control-link  control-link-color">Color</a>
-                <a href="#" class="control-link  control-link-contrast">Contrast</a>
+          <div class="page-container upload-section__photo">
+            <img src="img/photo-7-mobile.jpg"  alt="Upload Photo">
+          </div>
+          <div class="upload-section__controls">
+            <div class="upload-controls">
+              <a href="#" class="control-link control-link-crop--active ">Crop</a>
+              <a href="#" class="control-link  control-link-color">Color</a>
+              <a href="#" class="control-link  control-link-contrast">Contrast</a>
+            </div>
+            <div class="control-range">
+              <div class="control-range__block">
+                <div class="control-toggle__scale control-toggle__scale--crop">x</div>
+                <div class="control-range__toggle control-range__toggle--crop"></div>
               </div>
-              <div class="control-range">
-                <div class="control-range__block">
-                  <div class="control-toggle__scale control-toggle__scale--crop">x</div>
-                  <div class="control-range__toggle control-range__toggle--crop"></div>
-                </div>
-                <div class="control-range__block">
-                  <div class="control-toggle__scale control-toggle__scale--color">x</div>
-                  <div class="control-range__toggle control-range__toggle--color"></div>
-                </div>
-                <div class="control-range__block">
-                  <div class="control-toggle__scale control-toggle__scale--contrast">x</div>
-                  <div class="control-range__toggle control-range__toggle--contrast"></div>
-                </div>
+              <div class="control-range__block">
+                <div class="control-toggle__scale control-toggle__scale--color">x</div>
+                <div class="control-range__toggle control-range__toggle--color"></div>
               </div>
-              <div class="upload-buttons">
-                <a href="#" class="btn btn-upload--enabled">Запостить</a>
-                <a href="#" class="btn btn-upload--disabled">Отмена</a>
+              <div class="control-range__block">
+                <div class="control-toggle__scale control-toggle__scale--contrast">x</div>
+                <div class="control-range__toggle control-range__toggle--contrast"></div>
               </div>
+            </div>
+            <div class="upload-buttons">
+              <a href="#" class="btn-upload btn-upload--enabled">Запостить</a>
+              <a href="#" class="btn-upload btn-upload--disabled">Отмена</a>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer-inner footer-inner--page">
-      <div class="page-container">
+      <div class="page-container footer-inner__flex">
         <section class="footer-inner__logo">
           <a  href="#" class="footer-inner__logo-link"> Logo</a>
         </section>
@@ -173,5 +175,6 @@
         </section>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

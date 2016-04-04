@@ -2,27 +2,57 @@
   display: none;
 
   text-align: left;
-  background: $bg-block;
+
 }
+
+.promo-effect a {
+  color: #d22856;
+}
+
 
 
 @media (#{$tablet-widths}) {
 
   .promo-effect {
     display: block;
-    padding-left: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px
+    margin-left: 50%;
+    padding-top: 90px;
+
+    margin-bottom: 70px;
   }
+
+  .promo-effect__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .promo-effect__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
 }
 
 @media (#{$desktop-widths}) {
 
   .promo-effect {
     display: block;
-    padding-left: 370px;
-    margin-top: 75px;
-    margin-bottom: 50px;
+    margin-left: 39%;
+
+    margin-bottom: 70px;
+  }
+
+  .promo-effect__text {
+    font-size: 18px;
+  }
+
+  .promo-effect__link {
+    font-size: 18px;
   }
 
 }
