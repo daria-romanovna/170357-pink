@@ -1,3 +1,10 @@
+.form-block__wrapper--achievements,
+.form-block__wrapper--application  {
+  padding: 0;
+  margin: 0;
+  background: $bg-lightgrey;
+}
+
 .form-block {
   margin: 0 auto;
   margin-bottom: 35px;
@@ -8,7 +15,8 @@
 .form-block__title  {
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   text-align: center;
   color: #d22856;
@@ -19,14 +27,9 @@
   display: none;
 }
 
-.form-block--achievements,
-.form-block--application  {
-  background: $bg-block;
-}
-
 .name-input {
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .name-input  label,
@@ -42,7 +45,7 @@
 
 .achievement-input,
 .application-input {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .contact-input {
@@ -53,11 +56,18 @@
   text-align: center;
 }
 
+.form-block__title--text {
+  display: none;
+}
+
 .form-block--text textarea {
+  box-sizing: border-box;
   width: 100%;
 }
 
 .form-submit {
+  margin-bottom: 50px;
+
   text-align: center;
 }
 
@@ -93,100 +103,169 @@
 
 @media (#{$tablet-widths}) {
 
+  .name-input {
+    margin-bottom: 55px;
+  }
+
+  .name-input:last-child {
+    margin-bottom: 0;
+  }
+
+  .name-input input[type=text] {
+    box-sizing: border-box;
+    width: 80%;
+  }
+
+  .name-input label {
+    box-sizing: border-box;
+    width: 15%;
+    margin-right: 15px;
+  }
+
   .form-block__wrapper {
+    margin-bottom: 70px;
+  }
+
+  .form-block__wrapper--achievements,
+  .form-block__wrapper--application  {
+    background: #ffffff;
+  }
+
+  .contest-form__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
-  .form-block {
-    position: relative;
-    padding: 40px 60px;
-
-    border-color: #e5e5e5;
-    background: #fff;
-  }
-
-  .form-block--achievements,
-  .form-block--name,
-  .form-block--contacts,
-  .form-block--text,
-  .form-block--application,
-  .form-submit {
-    box-sizing: border-box;
-    width: 100%;
-
-    background: transparent;
-  }
-
-  .form-block--name {
+  .form-block__wrapper--name {
     order: 1;
     padding: 0;
 
     border: none;
   }
 
-  .form-block--application {
+  .form-block__wrapper--application {
     order: 2;
   }
 
-  .form-block--contacts {
+  .form-block__wrapper--contacts {
     order: 3;
   }
 
-  .form-block--achievements {
+  .form-block__wrapper--achievements {
     order: 4;
   }
 
-  .form-block--text {
+  .form-block__wrapper--text {
     order: 5;
   }
 
-  .form-submit {
-    display: flex;
-    justify-content: space-between;
+  .form-block {
+    text-align: center;
+    margin-bottom: 0;
 
-    order: 6;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-block--name {
+    border: none;
   }
 
   .form-block__title  {
-    position: absolute;
-    top: -5px;
-    right: 30%;
-    margin:0;
-
+    display: inline-block;
+    margin: 0 auto;
+    padding:0;
     padding-left: 20px;
     padding-right: 20px;
 
-    background: #fff;
+    background: #ffffff;
+    transform: translate(0,-58px);
+
+  }
+
+  .form-block--application,
+  .form-block--contacts,
+  .form-block--text,
+  .form-block--achievements{
+    padding: 50px 55px;
+  }
+
+  .form-block--application__wrapper,
+  .form-block--contacts__wrapper,
+  .form-block--text__wrapper,
+  .form-block--achievements__wrapper {
+
+    text-align: left;
   }
 
   .form-block--contacts .form-block__title  {
-    display: block;
+    display: inline-block;
   }
 
-  .form-block--text textarea {
-    width: 100%;
-    margin: 0 auto;
+  .contact-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-input input {
+    order: 1;
+    position: relative;
+  }
+
+  .contact-input input[type=text] {
+    padding-right: 100px;
+  }
+
+  .contact-input__phone input[type=text] {
+    background-image: url(../img/icon-phone.svg);
+    background-position: top 18px right 20px;
+    background-repeat: no-repeat;
+  }
+
+  .contact-input__email input[type=text] {
+    background-image: url(../img/icon-mail.svg);
+    background-position: top 18px right 20px;
+    background-repeat: no-repeat;
+  }
+
+  .contact-input label {
+    order: 2;
+    margin-top: 15px;
+  }
+
+  .form-submit {
+    margin-bottom: 0;
+  }
+
+  .form-submit__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .form-submit__btn {
+    box-sizing: border-box;
     width: 50%;
   }
 
   .form-submit__note {
-    width: 40%;
-    margin-top: 30px;
+    box-sizing: border-box;
+    width: 45%;
+    padding-top: 20px;
+  }
 
+  .form-submit__note {
     text-align: right;
-
   }
 
 }
 
  @media (#{$desktop-widths}) {
 
-  .form-block__wrapper {
+  .contest-form__wrapper {
+    @include container-fluix;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -195,25 +274,55 @@
     margin-top: 40px;
   }
 
-  .form-block--application,
-  .form-block--name {
+  .form-block__wrapper--name {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-block__wrapper--name .page-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .name-input input[type=text] {
+    box-sizing: border-box;
+    width: 70%;
+  }
+
+  .name-input label {
+    box-sizing: border-box;
+    width: 20%;
+    margin-right: 15px;
+  }
+
+  .name-input {
+    margin-bottom: 60px;
+  }
+
+  .form-block__wrapper--application {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 
     box-sizing: border-box;
-    width: 45%;
+    width: 50%;
     padding-bottom: 0;
   }
 
-  .application-input,
-  .achievement-input {
-    margin-top: 20px;
+  .form-block--application {
+    padding: 30px;
   }
 
-  .form-block--achievements,
-  .form-block--contacts,
-  .form-block--text {
+  .application-input {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .form-block__wrapper--achievements,
+  .form-block__wrapper--contacts,
+  .form-block__wrapper--text {
     box-sizing: border-box;
     width: 100%;
     flex: 1 1 100%;
@@ -227,16 +336,29 @@
     justify-content: space-between;
   }
 
+  .form-block--contacts__wrapper {
+    flex-wrap: nowrap;
+
+    margin: 0 auto;
+  }
+
   .achievement-input {
     width: 33%;
   }
 
-
   .contact-input {
-    width: 40%;
+    width: 50%;
+    margin-right: 50px;
+
     box-sizing: border-box;
   }
 
+  .contact-input:last-child {
+    margin-right: 0;
+  }
 
+  .form-submit {
+    @include container-fluix;
+  }
 
  }

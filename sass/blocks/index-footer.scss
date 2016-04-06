@@ -1,5 +1,4 @@
 .index-footer {
-
   text-align: center;
 }
 
@@ -19,13 +18,14 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   flex-direction: column;
-
-
-  margin-bottom: 40px;
 }
 
 .contact-item {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+}
+.contact-item--write span:hover {
+  color: #283645;
+  text-decoration: underline;
 }
 
 .contact-item__title {
@@ -40,10 +40,27 @@
   color: #d22856;
 }
 
-.footer-map {
-  min-height: 200px;
-  background: url(../img/bg-map.png) no-repeat center  #eae0ba;
-  background-size: cover;
+.footer-block__map {
+  position: relative;
+  height: 300px;
+}
+
+.footer-block__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map-triangle {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50%;
+
+  background: url(../img/bg-triangle-white-footer.svg) center top no-repeat;
+  background-size: 100% auto;
 }
 
 @media (#{$tablet-widths}) {
@@ -56,11 +73,9 @@
     align-items: center;
   }
 
-
   .contact-item {
     width: 50%;
     margin-bottom: 45px;
-
   }
 
   .footer-contacts__phrase {
@@ -68,8 +83,9 @@
     margin-bottom: 45px;
   }
 
-  .footer-map {
-    min-height: 380px;
+  .footer-block__map {
+    position: relative;
+    height: 380px;
   }
 
 }
@@ -85,7 +101,6 @@
 
   .contact-item {
     width: 32%;
-
     margin-bottom: 45px;
   }
 
@@ -106,8 +121,9 @@
     margin-bottom: 55px;
   }
 
-  .footer-map {
-    min-height: 500px;
+  .footer-block__map {
+    position: relative;
+    height: 500px;
   }
 
 }

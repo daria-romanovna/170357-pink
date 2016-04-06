@@ -2,6 +2,11 @@
   display: none;
 }
 
+.footer-inner {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .footer-inner--page {
   display: block;
   min-height: 240px;
@@ -11,7 +16,6 @@
 .footer-inner__social,
 .footer-inner__copyright {
   text-align: center;
-  margin-bottom: 35px;
 }
 
 .social-links {
@@ -33,42 +37,58 @@
   border-radius: 50%;
   font-size: 0;
   color: #d22856;
+
+  text-align: center;
 }
 
-.footer-inner__logo {
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 30px;
+.social-links a:hover {
+  border: 3px solid #283645;
+}
 
-  width: 147px;
-  height: 41px;
+.social-link svg {
+  fill: #d22856;
+}
 
-  font-size: 0;
-  background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+.footer-inner__logolink--desktop {
+  display: none;
 }
 
 .footer-inner__copyright {
-  margin-bottom: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.footer-inner__copyright-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px;
 
   font-size: 14px;
   line-height: 18px;
   color: #283645;
 }
 
-.footer-inner__copyright-link {
-  display: inline-block;
-  vertical-align: top;
+.footer-inner__copyright-link svg {
+  position: absolute;
+  top: 30%;
 
-  width: 27px;
-  height: 35px;
-  margin-left: 10px;
+  fill: #d22856;
+}
 
-  font-size: 0;
-  background: url(../img/logo-htmlacademy.svg) no-repeat;
+.footer-inner__copyright-link:hover svg {
+  fill: #283645;
+}
+
+.footer__logocolor:hover path {
+  fill: #d22856;
 }
 
 @media (#{$tablet-widths}) {
+
+  .footer-inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .footer-inner--page {
     min-height: 60px;
@@ -97,6 +117,23 @@
 
   .footer-inner__copyright {
     text-align: right;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .footer-inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-inner__logolink--mobile {
+    display: none;
+  }
+
+  .footer-inner__logolink--desktop {
+    display: block;
   }
 
 }

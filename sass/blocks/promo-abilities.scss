@@ -6,21 +6,20 @@
   margin-top: 60px;
 }
 
-.promo-ability {
-  margin-bottom: 25px;
-}
-
-
 .promo-effect__title {
  margin-bottom: 15px;
- margin-top: 0;
+ margin: 0;
 
  font-size: 18px;
  font-weight: 700;
- line-height: 30px;
+ line-height: px;
 }
 
 .promo-ability__description {
+ margin: 0;
+ padding: 0;
+ margin-bottom: 15px;
+
  font-size: 14px;
  line-height: 24px;
 }
@@ -30,8 +29,12 @@
 
   .promo-abilities {
    order:2;
-   width: 300px;
-   flex-grow: 1;
+
+   box-sizing: border-box;
+   width: 50%;
+   margin: 0;
+
+   padding-top: 65px;
 
    text-align: left;
   }
@@ -43,16 +46,19 @@
   .promo-abilities {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
     order: 2;
   }
 
   .promo-ability {
-    width: 250px;
-    min-height: 220px;
+    box-sizing: border-box;
+    width: 28%;
 
     text-align: center;
-   }
+    // border: 1px solid black;
+  }
 
    .promo-effect__title {
      display: inline-block;
