@@ -3,7 +3,8 @@
   margin-bottom: 40px;
 
   text-align: center;
-  background: $bg-block;
+
+  z-index: 50;
 }
 
 .review__item:not(:first-child) {
@@ -16,34 +17,101 @@
 
 .review__text {
   margin-bottom: 35px;
+
+  line-height: 30px;
 }
 
 .slider-pagination {
   text-align: center;
 }
 
+.slider-pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
 .slider-page {
   display: inline-block;
   vertical-align: top;
+
+  width: 6px;
+  height: 6px;
+
+  margin-right: 18px;
+
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, .3);
+  background-clip: padding-box;
+
+  cursor: pointer;
+
+  font-size: 0;
+}
+
+.slider-page:last-child {
+  margin-right: 0
+}
+
+.slider-page--active {
+  background-color: transparent;
+  border-color: #283645;
 }
 
 @media (#{$tablet-widths}) {
 
+  .reviews {
+    margin-bottom: 40px;
+  }
+
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .review__text {
+    order: 1;
+
+    margin-bottom: 30px;
+
     font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__author {
+    order: 3;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .review__title {
+    order: 2;
+
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
   }
 
 }
 
 @media (#{$desktop-widths}) {
 
+  .reviews {
+    margin-bottom: 40px;
+  }
+
   .review__text {
     width: 685px;
     margin: 0 auto;
-  }
-
-  .review__item {
-    padding-top: 190px;
   }
 
 }

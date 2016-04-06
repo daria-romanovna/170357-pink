@@ -1,43 +1,94 @@
-.footer-inner {
+.footer-index__flex {
   display: none;
 }
 
 .footer-inner--page {
   display: block;
-
-  min-height: 290px;
-  background: #ffffff;
+  min-height: 240px;
 }
 
 .footer-inner__logo,
 .footer-inner__social,
 .footer-inner__copyright {
-  min-height: 90px;
-
   text-align: center;
+  margin-bottom: 35px;
+}
 
-  background: $bg-block;
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+
+  width: 19px;
+  height: 19px;
+  padding: 13px;
+
+  border: 3px solid rgba(40, 54, 69, .1);
+  border-radius: 50%;
+  font-size: 0;
+  color: #d22856;
+}
+
+.footer-inner__logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  width: 147px;
+  height: 41px;
+
+  font-size: 0;
+  background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+}
+
+.footer-inner__copyright {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
+
+.footer-inner__copyright-link {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 27px;
+  height: 35px;
+  margin-left: 10px;
+
+  font-size: 0;
+  background: url(../img/logo-htmlacademy.svg) no-repeat;
 }
 
 @media (#{$tablet-widths}) {
 
-  .footer-inner {
-    display: block;
-    min-height: 125px;
+  .footer-inner--page {
+    min-height: 60px;
+  }
+
+  .footer-inner__flex,
+  .footer-index__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
   }
 
   .footer-inner__logo,
   .footer-inner__social,
   .footer-inner__copyright {
-    margin: 0 auto;
-    margin-top: 30px;
-
-    width: 200px;
-    min-height: 50px;
-    display: inline-block;
-    vertical-align: top;
-
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 33.2%;
   }
 
   .footer-inner__logo {
@@ -50,20 +101,3 @@
 
 }
 
-@media (#{$desktop-widths}) {
-
-  .footer-inner {
-    display: block;
-    min-height: 195px;
-  }
-
-  .footer-inner__logo,
-  .footer-inner__social,
-  .footer-inner__copyright {
-    margin: 0 auto;
-    margin-top: 65px;
-
-    width: 300px;
-  }
-
-}
