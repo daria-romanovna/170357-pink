@@ -1,3 +1,4 @@
 .page-container {
   @include container-fluix;
+  @include clearfix;
  }

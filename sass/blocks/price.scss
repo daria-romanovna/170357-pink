@@ -1,52 +1,63 @@
+.price {
+  padding-top: 100px;
+  padding-bottom: 0px;
+
+  background-color: $bg-lightgrey;
+  overflow: hidden;
+}
+
+.slider-pice {
+  @include container-fluix;
+}
 
 .price-table {
+  position: relative;
+  width: 270%;
+  right: 80%;
+
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  width: 270%;
-
-  border-collapse: collapse;
-  // border: 2px solid #e5e5e5;
 
   text-transform: uppercase;
+
+  border-collapse: collapse;
 }
 
 .price-table tr {
-    border-bottom: 2px solid #e5e5e5
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .price-table tr:first-child {
-    border-bottom: none
+  border-bottom: none;
 }
 
 .price-table td, .price-table th {
-    border-right: 2px solid #e5e5e5
+  border-right: 2px solid #e5e5e5;
 }
 
 .price-table td {
-    text-align: left;
-    background: #fff;
-    padding: 22px
+  text-align: left;
+  background: #fff;
+  padding: 22px;
 }
 
 .price-table td:nth-child(even) {
-    border-right: none
+    border-right: none;
 }
 
 .price-table td:first-child {
     text-transform: none;
-    border: 2px solid #e5e5e5
+    border: 2px solid #e5e5e5;
 }
-
 
 .price-table  td:first-child,
 .price-table  th:first-child, {
   display: none;
 }
 
-
 .price-table  th {
-  padding: 20px 40px;
+  padding: 20px 0;
 
   background: #283645;
   color: #ffffff;
@@ -56,25 +67,60 @@
   text-transform: uppercase;
 }
 
+.price-table  th:nth-child(3) {
+  position: relative;
+}
+
+.price-table__hit {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 80px;
+  height: 73px;
+  margin-left: -2px;
+}
+
+.price-table__hittext {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 700;
+
+  transform: rotate(-45deg);
+}
+
 .price-table__tarif {
   font-size: 16px;
   font-weight: 700;
 }
 
-.price-table__rate {
+.price-table__option--yes svg{
+  fill: #3dc644;
+}
 
+.price-table__option--no svg{
+  fill: #f25b26;
+}
+
+.price .slider-pagination {
+  margin-bottom: 30px;
 }
 
 @media (#{$tablet-widths}) {
 
   .price-table {
+    position: static;
     margin:0 auto;
-    width: 620px;
-    margin-top: 100px;
+    width: 100%;
+
+    padding-top: 80px;
     margin-bottom: 40px;
 
     font-size: 18px;
-
   }
 
   .price-table  td:first-child,
@@ -101,20 +147,20 @@
     text-align: center;
   }
 
+  .price .slider-pagination {
+    display: none;
+  }
 
 }
 
 @media (#{$desktop-widths}) {
 
-  .slider-pice {
-    @include container-fluix;
-  }
-
   .price-table {
     margin:0 auto;
     width: 100%;
-    margin-top: 150px;
-    margin-bottom: 40px;
+
+    padding-top: 150px;
+    margin-bottom: 95px;
   }
 
 }

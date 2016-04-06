@@ -30,10 +30,10 @@
 @media (#{$tablet-widths}) {
 
   .header-intro {
+    position: relative;
     float: right;
-    width: 300px;
 
-    min-height: 545px;
+    min-height: 550px;
   }
 
   .header-intro img {
@@ -42,9 +42,6 @@
     right: 0;
     left: auto;
     bottom: 0;
-
-    width: 470px;
-    height: 545px;
   }
 
   .innerheader-intro {
@@ -56,15 +53,18 @@
 @media (#{$desktop-widths}) {
 
   .header-intro {
+    position: relative;
     float: right;
-    width: 570px;
 
-    min-height: 645px;
+    min-height: 650px;
   }
 
   .header-intro img {
-    width: 565px;
-    height:645px;
+    position: absolute;
+
+    right: 0;
+    left: auto;
+    bottom: 0;
   }
 
   .innerheader-intro {
