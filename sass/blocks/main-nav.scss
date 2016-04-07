@@ -18,6 +18,7 @@
 
 .main-nav__wrapper--closed {
   display: none;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__logo  {
@@ -129,6 +130,10 @@
 
 .main-nav--opened {
   background: #283645;
+}
+
+.main-nav--closed {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 @media (#{$tablet-widths}) {
