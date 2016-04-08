@@ -160,8 +160,6 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-
     margin-top: 50px;
   }
 
@@ -169,7 +167,11 @@ img {
     box-sizing: border-box;
     width: 47%;
 
-    margin-right: 15px;
+    margin-right: 6%;
+  }
+
+  .photo-block:nth-child(2n) {
+    margin-right: 0;
   }
 
   .photo-block__image {
@@ -254,7 +256,6 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     margin-top: 50px;
   }
@@ -263,6 +264,16 @@ img {
     box-sizing: border-box;
     width: 30%;
     margin-bottom: 55px;
+    margin-right: 5%;
+
+  }
+
+  .photo-block:nth-child(2n) {
+    margin-right: 5%;
+  }
+
+  .photo-block:nth-child(3n) {
+    margin-right: 0;
   }
 
   .photo-block-intro__text {

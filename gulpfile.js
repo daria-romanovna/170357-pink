@@ -19,7 +19,8 @@ var paths = {
   fonts: "fonts/**/*.{woff,woff2}",
   scripts: "js/**/*.js",
   images: "img/**/*.{png,jpg,gif,svg}",
-  html: "*.html"
+  html: "*.html",
+  css: "css/normalize.css"
 };
 
 gulp.task("clean", function() {
@@ -32,6 +33,8 @@ gulp.task( "copy", function() {
     .pipe(gulp.dest("build/fonts"));
   gulp.src(paths.html)
     .pipe(gulp.dest("build"));
+  gulp.src(paths.css)
+    .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("style", function() {

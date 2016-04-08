@@ -128,7 +128,7 @@
   }
 
   .form-block__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .form-block__wrapper--achievements,
@@ -279,15 +279,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .form-block__wrapper--name .page-container,
+  .form-block__wrapper--application .page-container,
+  .form-block__wrapper--text .page-container,
+  .form-block__wrapper--achievements .page-container,
+  .form-block__wrapper--contacts .page-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form-block__wrapper--name {
     box-sizing: border-box;
-    width: 50%;
+    width: 48%;
     padding: 0;
     margin: 0;
-    padding-left: 130px;
+    margin-right: 20px;
   }
 
   .form-block__wrapper--name .page-container {
@@ -295,15 +308,21 @@
     margin: 0;
   }
 
+  .name-input {
+    padding: 0;
+    margin: 0;
+  }
+
   .name-input input[type=text] {
     box-sizing: border-box;
-    width: 75%;
+    width: 70%;
   }
 
   .name-input label {
     box-sizing: border-box;
-    width: 20%;
-    margin-right: 15px;
+    width: 25%;
+    margin: 0;
+    padding: 0;
   }
 
   .name-input {
@@ -316,9 +335,9 @@
     flex-direction: column;
 
     box-sizing: border-box;
-    width: 50%;
+    width: 48%;
     padding-bottom: 0;
-    padding-right: 130px;
+    // padding-right: 130px;
   }
 
   .form-block--application {
@@ -379,7 +398,7 @@
 
   .form-block--achievements {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-right: 0;
   }
 
@@ -415,6 +434,10 @@
     box-sizing: border-box;
     width: 75%;
     padding-top: 20px;
+  }
+
+  .form-block__wrapper--text {
+    margin-bottom: 80px;
   }
 
  }
