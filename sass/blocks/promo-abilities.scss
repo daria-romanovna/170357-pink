@@ -57,11 +57,12 @@
     width: 28%;
 
     text-align: center;
-    // border: 1px solid black;
+
   }
 
    .promo-effect__title {
      display: inline-block;
+     vertical-align: top;
      padding: 0 35px;
 
      margin-bottom: 25px;

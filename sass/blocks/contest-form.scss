@@ -1,7 +1,7 @@
 
 .contest-form__conditions {
   margin-top: 45px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   text-align: center;
   font-size: 14px;
@@ -15,6 +15,7 @@
 @media (#{$tablet-widths}) {
 
   .contest-form__conditions {
+    margin-top: 75px;
     padding-left: 60px;
     padding-right: 60px;
 
@@ -23,3 +24,16 @@
   }
 
 }
+
+@media (#{$desktop-widths}) {
+
+  .contest-form__conditions {
+    padding-top: 45px;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}
+

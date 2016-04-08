@@ -197,6 +197,7 @@
 
   .control-link {
     display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
     width: 20%;
     height: 40px;
@@ -214,6 +215,7 @@
   .control-range__block--contrast {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
     width: 70%;
     height: 40px;

@@ -1,14 +1,14 @@
-.promo-effect-wrapper {
+.promo-effect__wrapper {
   display: none;
 }
 
-.promo-effect-wrapper a {
+.promo-effect__wrapper a {
   color: #d22856;
 }
 
 @media (#{$tablet-widths}) {
 
-  .promo-effect-wrapper {
+  .promo-effect__wrapper {
 
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@
     box-sizing: border-box;
     width: 50%;
 
-    background-image: url(../img/icon-timer.svg);
+    background-image: url("../img/icon-timer.svg");
     background-size: 262px auto;
     background-position: center top;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     background-color: $bg-lightgrey;
   }
 
-  .promo-effect-wrapper {
+  .promo-effect__wrapper {
     padding-bottom: 60px;
   }
 

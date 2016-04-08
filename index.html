@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Pink</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <div class="page-container main_nav-clearfix">
           <div class="main-nav__block">
             <a href="index.html" class="main-nav__logo">
@@ -123,9 +127,9 @@
                 </svg>
               </span>
             </a>
-            <a href="" class="main-nav__toggle  main-nav__toggle--closed">X</a>
+            <a href="" class="main-nav__toggle  main-nav__toggle--opened">X</a>
           </div>
-          <ul class="main-nav__wrapper  main-nav__wrapper--closed">
+          <ul class="main-nav__wrapper  main-nav__wrapper--opened">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
@@ -230,7 +234,7 @@
         </div>
       </section>
       <section class="promo-effect">
-        <div class="promo-effect-wrapper page-container">
+        <div class="promo-effect__wrapper page-container">
           <div class="promo-effect__picture">
             <div class="promo-effect__timer">24</div>
           </div>
@@ -311,79 +315,29 @@
               <td>Розовый фильтр</td>
               <td>Розовый фильтр</td>
               <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
               </td>
               <td>Розовый фильтр</td>
-              <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
+              <td class="price-table__option price-table__option--yes"></td>
               <td>Розовый фильтр</td>
-              <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
+              <td class="price-table__option price-table__option--yes"></td>
             </tr>
             <tr>
               <td>Смайлики</td>
               <td>Смайлики</td>
-              <td class="price-table__option price-table__option--no">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-               <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439
-                c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121
-                c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439
-                s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-               </svg>
-              </td>
+              <td class="price-table__option price-table__option--no"></td>
               <td>Смайлики</td>
-              <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0
-                  s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09
-                  C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
+              <td class="price-table__option price-table__option--yes"></td>
               <td>Смайлики</td>
-              <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0
-                s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09
-                C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
+              <td class="price-table__option price-table__option--yes"></td>
             </tr>
             <tr>
               <td>Комментарии</td>
               <td>Комментарии</td>
-              <td class="price-table__option price-table__option--no">
-               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-               <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439
-                c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121
-                c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439
-                s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-               </svg>
-              </td>
+              <td class="price-table__option price-table__option--no"></td>
               <td>Комментарии</td>
-              <td class="price-table__option price-table__option--no">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-               <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439
-                c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121
-                c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439
-                s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-               </svg>
-              </td>
+              <td class="price-table__option price-table__option--no"></td>
               <td>Комментарии</td>
-              <td class="price-table__option price-table__option--yes">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
-                <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0
-                s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09
-                C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
-                </svg>
-              </td>
+              <td class="price-table__option price-table__option--yes"></td>
             </tr>
           </table>
           <ul class="slider-pagination">
