@@ -78,7 +78,7 @@ input[type=radio]:checked + label::after {
 
  }
 
- input[type=checkbox]:checked + label::after {
+input[type=checkbox]:checked + label::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -88,10 +88,10 @@ input[type=radio]:checked + label::after {
   height: 17px;
 
   border-radius: 2px;
-  background: url(../img/icon-yes-checkbox.svg) center no-repeat;
+  background: url("../img/icon-yes-checkbox.svg") center no-repeat;
  }
 
- textarea {
+textarea {
   padding: 20px;
 
   color: #283645;

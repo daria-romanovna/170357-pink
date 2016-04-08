@@ -85,7 +85,6 @@
 
   .review__text {
     order: 1;
-
     margin-bottom: 30px;
 
     font-size: 18px;
@@ -139,7 +138,7 @@
 
   .slider-control__arrow  {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 100px;
 
     width: 22px;
@@ -171,6 +170,5 @@
   .slider-pagination {
     display: none;
   }
-
 
 }

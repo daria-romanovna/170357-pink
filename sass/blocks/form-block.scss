@@ -103,6 +103,10 @@
 
 @media (#{$tablet-widths}) {
 
+  .contest-form__wrapper {
+    margin-top: 30px;
+  }
+
   .name-input {
     margin-bottom: 55px;
   }
@@ -114,6 +118,7 @@
   .name-input input[type=text] {
     box-sizing: border-box;
     width: 80%;
+    padding: 16px 20px;
   }
 
   .name-input label {
@@ -173,6 +178,7 @@
 
   .form-block__title  {
     display: inline-block;
+    vertical-align: top;
     margin: 0 auto;
     padding:0;
     padding-left: 20px;
@@ -180,7 +186,6 @@
 
     background: #ffffff;
     transform: translate(0,-58px);
-
   }
 
   .form-block--application,
@@ -188,18 +193,23 @@
   .form-block--text,
   .form-block--achievements{
     padding: 50px 55px;
+    padding-bottom: 0;
+  }
+
+  .form-block--text {
+    padding-bottom: 55px;
   }
 
   .form-block--application__wrapper,
   .form-block--contacts__wrapper,
   .form-block--text__wrapper,
   .form-block--achievements__wrapper {
-
     text-align: left;
   }
 
   .form-block--contacts .form-block__title  {
     display: inline-block;
+    vertical-align: top;
   }
 
   .contact-input {
@@ -218,13 +228,13 @@
   }
 
   .contact-input__phone input[type=text] {
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-position: top 18px right 20px;
     background-repeat: no-repeat;
   }
 
   .contact-input__email input[type=text] {
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
     background-position: top 18px right 20px;
     background-repeat: no-repeat;
   }
@@ -264,14 +274,12 @@
  @media (#{$desktop-widths}) {
 
   .contest-form__wrapper {
-    @include container-fluix;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .form-block__wrapper--name {
@@ -279,6 +287,7 @@
     width: 50%;
     padding: 0;
     margin: 0;
+    padding-left: 130px;
   }
 
   .form-block__wrapper--name .page-container {
@@ -288,7 +297,7 @@
 
   .name-input input[type=text] {
     box-sizing: border-box;
-    width: 70%;
+    width: 75%;
   }
 
   .name-input label {
@@ -309,10 +318,17 @@
     box-sizing: border-box;
     width: 50%;
     padding-bottom: 0;
+    padding-right: 130px;
   }
 
   .form-block--application {
     padding: 30px;
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+
+  .form-block--application  .form-block__title  {
+    transform: translate(0,-28px);
   }
 
   .application-input {
@@ -325,7 +341,6 @@
   .form-block__wrapper--text {
     box-sizing: border-box;
     width: 100%;
-    flex: 1 1 100%;
   }
 
   .form-block--achievements__wrapper,
@@ -343,7 +358,7 @@
   }
 
   .achievement-input {
-    width: 33%;
+    width: 29%;
   }
 
   .contact-input {
@@ -357,8 +372,49 @@
     margin-right: 0;
   }
 
-  .form-submit {
-    @include container-fluix;
+  .form-block--contacts {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .form-block--achievements {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 0;
+  }
+
+  .form-block--text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .form-block--text .form-block__title  {
+    transform: translate(0,-35px);
+  }
+
+  .form-block--contacts  .form-block__title,
+  .form-block--achievements .form-block__title {
+    transform: translate(0,-35px);
+  }
+
+  .contact-input {
+    margin-bottom: 10px;
+  }
+
+  .form-block--text textarea {
+    width: 100%;
+    height: 125px;
+  }
+
+  .form-submit__btn {
+    box-sizing: border-box;
+    width: 320px;
+  }
+
+  .form-submit__note {
+    box-sizing: border-box;
+    width: 75%;
+    padding-top: 20px;
   }
 
  }

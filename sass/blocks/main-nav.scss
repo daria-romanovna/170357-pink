@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-
   margin: 0;
   margin-bottom: 110px;
 
@@ -95,7 +94,6 @@
 .main-nav__toggle--opened:hover::after {
   background-color: #d22856;
 }
-
 
 .main-nav__item {
   display: block;
@@ -216,14 +214,14 @@
   .main-nav__wrapper {
     display: block;
     float: right;
-    width: 600px;
+    width: 670px;
   }
 
   .main-nav__item {
     display: inline-block;
     vertical-align: top;
 
-    margin-left: 55px;
+    margin-right: 60px;
     padding: 43px 0;
 
     font-weight: 300;
@@ -231,7 +229,6 @@
 
     background: transparent;
     box-shadow: none;
-
   }
 
   .main-nav__item a:hover {
@@ -239,8 +236,11 @@
     box-shadow: 0 1px 0 0 #ffffff;
   }
 
-}
+  .main-nav__wrapper--closed {
+   background: transparent;
+  }
 
+}
 
 .inner-nav {
   margin-bottom: 30px;
@@ -257,7 +257,7 @@
 @media (#{$desktop-widths}) {
 
   .inner-nav {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
 }

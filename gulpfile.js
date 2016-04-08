@@ -18,11 +18,11 @@ var paths = {
   sass: "sass/**/*.{scss,sass}",
   fonts: "fonts/**/*.{woff,woff2}",
   scripts: "js/**/*.js",
-  images: "img/**/*.{png,jpg,gif}",
+  images: "img/**/*.{png,jpg,gif,svg}",
   html: "*.html"
 };
 
-gulp.task('clean', function() {
+gulp.task("clean", function() {
   return gulp.src("build", {read: false})
      .pipe(clean());
 });
@@ -88,15 +88,15 @@ gulp.task("html", function() {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["style", "html"], function() {
   server.init({
-    server: ".",
+    server: "./build",
     notify: false,
     open: true,
     ui: false
   });
   gulp.watch(paths.scripts, ["build-js"]);
-  gulp.watch(paths.sass, ["build-style"]);
+  gulp.watch(paths.sass, ["style", "build-style"]);
   gulp.watch(paths.html, ["html"]);
   gulp.watch(paths.html).on("change", server.reload);
 });

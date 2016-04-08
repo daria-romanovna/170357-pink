@@ -13,13 +13,12 @@
 .innerheader-intro {
   margin: 0 auto;
   margin-bottom: 80px;
-  // width: 180px;
 
   text-align: center;
 }
 
-.innerheader-intro__title {
-  margin:  20px 0 30px;
+.innerheader-intro  .innerheader-intro__title {
+  margin-bottom: 90px;
   font-size: 24px;
   line-height: 1.4;
   font-weight: 300;
@@ -32,13 +31,11 @@
   .header-intro {
     position: relative;
     float: right;
-
     min-height: 550px;
   }
 
   .header-intro img {
     position: absolute;
-
     right: 0;
     left: auto;
     bottom: 0;
@@ -48,6 +45,15 @@
     width: 500px;
   }
 
+  .innerheader-intro  .innerheader-intro__title {
+    margin-bottom: 90px;
+    font-size: 44px;
+    line-height: 1.4;
+    font-weight: 300;
+
+    color: #ffffff;
+  }
+
 }
 
 @media (#{$desktop-widths}) {
@@ -55,13 +61,11 @@
   .header-intro {
     position: relative;
     float: right;
-
     min-height: 650px;
   }
 
   .header-intro img {
     position: absolute;
-
     right: 0;
     left: auto;
     bottom: 0;
@@ -69,6 +73,15 @@
 
   .innerheader-intro {
     width: 820px;
+  }
+
+  .innerheader-intro  .innerheader-intro__title {
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 1.4;
+    font-weight: 300;
+
+    color: #ffffff;
   }
 
 }
