@@ -9,6 +9,10 @@
   color: #ffffff;
 }
 
+.download-wrapper {
+ background-color: #1d2631;
+}
+
 .download-info__title {
   display: none;
 }
@@ -30,6 +34,10 @@
   background: #ffffff;
 }
 
+a.btn--download:active {
+  color: rgba(210, 40, 86, 0.3)
+}
+
 .download-links {
   margin: 30px 0;
 }
@@ -49,12 +57,17 @@
   display: block;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
+  margin: 0;
 
-  margin-bottom: 30px;
   line-height: 1.71
 }
 
 @media (#{$tablet-widths}) {
+
+  .download-wrapper {
+   background-color: transparent;
+  }
 
   .download-info {
     float: left;
@@ -76,7 +89,7 @@
   }
 
   .download-availability {
-    margin-bottom: 110px;
+    margin-bottom: 50px;
   }
 
 }

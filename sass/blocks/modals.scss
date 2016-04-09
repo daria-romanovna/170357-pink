@@ -1,0 +1,139 @@
+.modal-block {
+  display: none;
+}
+
+.modal-block--show {
+  display: block;
+}
+
+.modal-block--close {
+  display: none;
+}
+
+.modal-block {
+  position: fixed;
+  top: 50%;
+  margin-top: -245px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
+}
+
+.modal-block__textwrapper {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.modal-block__buttonwrapper {
+  padding: 45px 20px;
+  background-color: $bg-lightgrey;
+}
+
+.modal-block__buttonwrapper--fail {
+  padding: 45px 20px;
+  padding-top: 5px;
+  background: #ffffff;
+}
+
+.modal-block__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 1.29rem
+}
+
+.modal-block__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-block__text {
+  margin-bottom: 35px
+}
+
+.modal-block__button {
+  width: 100%;
+  padding: 15px 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+
+  color: #fff;
+  background-color: #2aab6d;
+}
+
+
+@media (#{$tablet-widths}) {
+
+  .modal-block {
+    left: 50%;
+    margin-left: -230px;
+    margin-top: -195px;
+    width: 460px;
+  }
+
+  .modal-block__textwrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .modal-block__buttonwrapper {
+    padding: 45px 80px;
+    background-color: $bg-lightgrey;
+  }
+
+  .modal-block__buttonwrapper--fail {
+    padding: 45px 80px;
+    padding-top: 5px;
+    background: #ffffff;
+  }
+
+}
+
+@media (#{$desktop-widths}) {
+
+  .modal-block {
+    left: 50%;
+    margin-left: -390px;
+    margin-top: -230px;
+    width: 780px;
+  }
+
+  .modal-block__textwrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .modal-block__buttonwrapper {
+    padding: 45px 160px;
+  }
+
+  .modal-block__buttonwrapper--fail {
+    padding: 45px 160px;
+    padding-top: 5px;
+  }
+
+  .modal-block__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-block__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

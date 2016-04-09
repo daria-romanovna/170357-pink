@@ -43,6 +43,9 @@
 .footer-block__map {
   position: relative;
   height: 300px;
+
+  background-image: url("../img/bg-map.png");
+  background-size: cover;
 }
 
 .footer-block__map iframe {
@@ -86,6 +89,9 @@
   .footer-block__map {
     position: relative;
     height: 380px;
+
+    background-image: url("../img/bg-map-tablet.jpg");
+    background-size: cover;
   }
 
 }
@@ -124,6 +130,9 @@
   .footer-block__map {
     position: relative;
     height: 500px;
+
+    background-image: url("../img/bg-map-desktop.jpg");
+    background-size: cover;
   }
 
 }

@@ -60,6 +60,10 @@
   background-color: rgba(40, 54, 69, .6);
 }
 
+.slider-page:active {
+    background-color: rgba(40, 54, 69, .1)
+}
+
 .slider-page:last-child {
   margin-right: 0
 }

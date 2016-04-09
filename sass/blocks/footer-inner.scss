@@ -45,6 +45,10 @@
   border: 3px solid #283645;
 }
 
+.social-links a:active {
+  opacity: 0.3;
+}
+
 .social-link svg {
   fill: #d22856;
 }
@@ -79,8 +83,16 @@
   fill: #283645;
 }
 
+.footer-inner__copyright-link:active svg {
+  opacity: 0.3;
+}
+
 .footer__logocolor:hover path {
   fill: #d22856;
+}
+
+.footer__logocolor:active path {
+  opacity: 0.3;
 }
 
 @media (#{$tablet-widths}) {
